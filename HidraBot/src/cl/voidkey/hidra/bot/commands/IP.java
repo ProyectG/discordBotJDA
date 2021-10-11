@@ -13,7 +13,7 @@ public class IP extends Parameters{
 				return address.getHostAddress();
 			}
 		} catch (Exception e) {
-			return "Error al obtener la ip, consulta a la administracion";
+			return "error";
 		}
 		return "error";
 

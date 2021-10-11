@@ -19,6 +19,12 @@
 			<artifactId>JDA</artifactId>
 			<version>4.3.0_333</version>
 		</dependency>
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-engine</artifactId>
+			<version>5.7.0</version>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -30,6 +36,12 @@
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
+					<skipTests>true</skipTests>
+					<excludes>
+						<exclude>
+							**/IPTest.java
+						</exclude>
+					</excludes>
 				</configuration>
 			</plugin>
 			<plugin>
